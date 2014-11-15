@@ -2,7 +2,7 @@
 set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 
 APP="$1"
-IMAGE="dokku/$1"
+IMAGE="dokku/$1:release"
 SCALE_FILE="$DOKKU_ROOT/$APP/SCALE"
 
 PLUGIN_DIR=$(dirname $0)
